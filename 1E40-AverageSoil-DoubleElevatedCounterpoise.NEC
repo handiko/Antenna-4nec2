@@ -1,0 +1,25 @@
+CM Example 1 :	Dipole in free space 	
+CM See GetStarted.txt
+CM 
+CM 
+CM 
+CM 
+CE
+SY freq=7.05
+SY H=11.2
+SY A=2
+SY R=8.05191
+SY RD=R/10
+SY wrad = 0.6*1e-3
+SY irad=1.25*1e-3
+GW	1	20	0	0	A	0	0	A+H	wrad
+GW	2	10	0	0	A	R	0	A	wrad
+GW	3	10	0	0	A	0	R	A	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	irad
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0	'Voltage source (1+j0) at wire 1 segment 5.
+FR	0	0	0	0	freq	0
+EN
