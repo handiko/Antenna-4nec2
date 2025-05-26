@@ -1,0 +1,34 @@
+CM Example 1 :	Dipole in free space 	
+CM See GetStarted.txt
+CM 
+CM 
+CM 
+CM 
+CE
+SY freq=433
+SY H=6
+SY D=0.32
+SY R=0.35
+SY D1=0.29
+SY D2=0.29
+SY D3=0.26
+SY DR=0.21
+SY DD1=0.16
+SY D1D2=0.21
+SY D2D3=0.21
+SY rad=3e-3
+GW	1	11	0	0	H-D/2	0	0	H+D/2	rad
+GW	2	11	-DR	0	H-R/2	-DR	0	H+R/2	rad
+GW	3	11	DD1	0	H-D1/2	DD1	0	H+D1/2	rad
+GW	4	11	DD1+D1D2	0	H-D2/2	DD1+D1D2	0	H+D2/2	rad
+GW	5	11	DD1+D1D2+D2D3	0	H-D3/2	DD1+D1D2+D2D3	0	H+D3/2	rad
+GW	6	30	DD1+D1D2+D2D3	rad*2	H	-0.75	rad*2	H	rad*2
+GW	7	100	-0.75	0	0	-0.75	0	H+0.5	rad*5
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	rad
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	6	0	1	0	0	'Voltage source (1+j0) at wire 1 segment 5.
+FR	0	0	0	0	freq	0
+EN

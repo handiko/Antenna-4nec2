@@ -1,0 +1,16 @@
+CM 3-Element Yagi Antenna for 100MHz
+CM Boom Length: 1.0m | Elements: 5mm Aluminum
+CE
+SY freq=100
+SY H=3
+GW	1	11	0	-0.75	H	0	0.75	H	0.0025
+GW	2	11	0.60	-0.715	H	0.60	0.715	H	0.0025
+GW	3	11	1.00	-0.68	H	1.00	0.68	H	0.0025
+GE	1
+GN	2	0	0	0	13	0.005
+EK
+EX	0	2	6	0	1	0	0	0
+
+FR	0	0	0	0	freq	0
+RP	0	91	361	1000	0	0	1			
+EN
