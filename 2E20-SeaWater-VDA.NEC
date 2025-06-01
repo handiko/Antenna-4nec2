@@ -3,7 +3,7 @@ CE
 SY freq=14.1
 SY sf=0.994	'scaling factor
 SY bs=3.56*sf	'boom spacing
-SY bh=1.0*6.24*sf	'boom height
+SY bh=7	'boom height
 SY hd=4.97*sf	'half driven length
 SY hr=5.23*sf	'half reflector length
 SY ds=0.46*sf	'driven spacing
