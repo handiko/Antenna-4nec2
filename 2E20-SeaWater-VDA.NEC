@@ -1,9 +1,9 @@
 CM Cardioid, converted with 4nec2 on 31-Mar-24 22:47
 CE
 SY freq=14.1
-SY sf=0.994	'scaling factor
+SY sf=0.958089	'scaling factor
 SY bs=3.56*sf	'boom spacing
-SY bh=7	'boom height
+SY bh=6	'boom height
 SY hd=4.97*sf	'half driven length
 SY hr=5.23*sf	'half reflector length
 SY ds=0.46*sf	'driven spacing
@@ -12,7 +12,7 @@ SY dx=(bs/2) - ds	'driven x axis length
 SY dz = sqr((hd*hd) - (dx*dx))	'driven y axis length
 SY rx=(bs/2)-rs	'reflector x axis length
 SY rz = sqr((hr*hr)-(rx*rx))	'reflector y axis length
-SY rad = 1e-3
+SY rad = 0.8e-3
 GW	1	20	bs/2	0	0	ds	0	dz	rad
 GW	2	20	bs/2	0	0	ds	0	-dz	rad
 GW	3	20	-bs/2	0	0	-rs	0	rz	rad
@@ -20,8 +20,8 @@ GW	4	20	-bs/2	0	0	-rs	0	-rz	rad
 GM	0	0	0	0	0	0	0	bh	1
 GE	-1
 LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	2*rad
 GN	2	0	0	0	81	5.0
-GD	1	0	0	0	81	5.0	5	1
 EK
 EX	6	1	1	0	1	0	0
 FR	0	0	0	0	freq	0
