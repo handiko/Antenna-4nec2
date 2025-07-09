@@ -8,7 +8,7 @@ CE
 SY freq=7.05
 SY H=11.43713
 SY A=2
-SY R=3.155935
+SY R=3.202363
 SY RD=R/10
 SY wrad = 0.6*1e-3
 SY irad=1.25*1e-3

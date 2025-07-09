@@ -1,0 +1,42 @@
+CM Example 1 :	Dipole in free space 	
+CM See GetStarted.txt
+CM 
+CM 
+CM 
+CM 
+CE
+SY freq=50.2
+SY H=6
+SY sf=0.954032
+SY W10=1.539682*sf
+SY R10=1.587388*sf
+SY D10=1.521763*sf
+SY D2=1.496134*sf
+SY dir=1.1
+SY dir2=2.4
+SY ref=1.3
+SY wrad = 0.8e-3
+GW	1	11	0	w10/2	H-w10/2	0	-w10/2	H-w10/2	wrad
+GW	2	11	0	w10/2	H+w10/2	0	-w10/2	H+w10/2	wrad
+GW	3	11	0	w10/2	H-w10/2	0	w10/2	H+w10/2	wrad
+GW	4	11	0	-w10/2	H-w10/2	0	-w10/2	H+w10/2	wrad
+GW	5	11	dir	-D10/2	H-D10/2	dir	D10/2	H-D10/2	wrad
+GW	6	11	dir	-D10/2	H+D10/2	dir	D10/2	H+D10/2	wrad
+GW	7	11	dir	-D10/2	H-D10/2	dir	-D10/2	H+D10/2	wrad
+GW	8	11	dir	D10/2	H-D10/2	dir	D10/2	H+D10/2	wrad
+GW	9	11	-ref	-R10/2	H-R10/2	-ref	R10/2	H-R10/2	wrad
+GW	10	11	-ref	-R10/2	H+R10/2	-ref	R10/2	H+R10/2	wrad
+GW	11	11	-ref	-R10/2	H-R10/2	-ref	-R10/2	H+R10/2	wrad
+GW	12	11	-ref	R10/2	H-R10/2	-ref	R10/2	H+R10/2	wrad
+GW	13	11	dir2	-D2/2	H-D2/2	dir2	D2/2	H-D2/2	wrad
+GW	14	11	dir2	-D2/2	H+D2/2	dir2	D2/2	H+D2/2	wrad
+GW	15	11	dir2	-D2/2	H-D2/2	dir2	-D2/2	H+D2/2	wrad
+GW	16	11	dir2	D2/2	H-D2/2	dir2	D2/2	H+D2/2	wrad
+GE	1
+LD	5	0	0	0	37700000
+LD	7	0	0	0	4.5	2*wrad
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	6	0	1	0	0	'Voltage source (1+j0) at wire 1 segment 5.
+FR	0	0	0	0	freq	0
+EN

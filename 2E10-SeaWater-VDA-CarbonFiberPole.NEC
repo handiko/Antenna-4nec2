@@ -1,0 +1,29 @@
+CM Cardioid, converted with 4nec2 on 31-Mar-24 22:47
+CE
+SY freq=28.074
+SY sf=0.714899	'scaling factor
+SY bs=sf*2.38	'boom spacing
+SY bh=3	'boom height 4.45
+SY hd=sf*3.31	'half driven length
+SY hr=sf*3.5	'half reflector length
+SY ds=sf*0.31	'driven spacing
+SY rs=sf*0.28	'reflector spacing
+SY dx=(bs/2) - ds	'driven x axis length
+SY dz = sqr((hd*hd) - (dx*dx))	'driven y axis length
+SY rx=(bs/2)-rs	'reflector x axis length
+SY rz = sqr((hr*hr)-(rx*rx))	'reflector y axis length
+SY rad = 0.8e-3
+SY qld = 0.25*300/freq	'quarter lambda distance
+GW	1	15	bs/2	0	0	ds	0	dz	rad
+GW	2	15	bs/2	0	0	ds	0	-dz	rad
+GW	3	15	-bs/2	0	0	-rs	0	rz	rad
+GW	4	15	-bs/2	0	0	-rs	0	-rz	rad
+GM	0	0	0	0	0	0	0	bh	1
+GE	-1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	2*rad
+GN	2	0	0	0	81	5.0
+EK
+EX	6	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

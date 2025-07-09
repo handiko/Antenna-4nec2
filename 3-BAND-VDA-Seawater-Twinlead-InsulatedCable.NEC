@@ -1,11 +1,11 @@
 CM Cardioid, converted with 4nec2 on 31-Mar-24 22:47
 CE
-SY freq=14.05
+SY freq=21.05
 SY rad=0.8e-3
-SY bh=5.5
-SY sf20=0.960531
+SY bh=5.25
+SY sf20=0.961898
 SY sf15=0.957833
-SY sf10=0.961807
+SY sf10=0.963864
 SY ZTL=450	'416 or 450
 SY TL1=1.85*sf20-1.24*sf15
 SY TL2=1.24*sf15-0.85*sf10
