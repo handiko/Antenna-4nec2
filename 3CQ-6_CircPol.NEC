@@ -30,5 +30,6 @@ LD	5	0	0	0	37700000
 GN	2	0	0	0	13	0.005
 EK
 EX	0	1	6	0	1	0	0	'Voltage source (1+j0) at wire 1 segment 5.
+EX	0	3	6	0	0	1	0	0
 FR	0	0	0	0	freq	0
 EN

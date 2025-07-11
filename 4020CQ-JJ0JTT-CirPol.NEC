@@ -1,0 +1,56 @@
+CM Cardioid, converted with 4nec2 on 31-Mar-24 22:47
+CE
+SY freq=14.05	'7.05
+SY rad=0.8e-3
+SY height=33
+SY sf40=0.9721
+SY ref40=43.78*sf40
+SY drv40=42.88*sf40
+SY dir40=41.08*sf40
+SY dref40=6
+SY ddir40=9
+SY sf20=0.9692
+SY ref20=22.28*sf20
+SY drv20=21.72*sf20
+SY dir120=21.52*sf20
+SY dir220=21.36*sf20
+SY dref20=6
+SY ddir20=4.5
+GW	1	39	0	drv40/8	-drv40/8	0	-drv40/8	-drv40/8	rad
+GW	2	39	0	drv40/8	drv40/8	0	-drv40/8	drv40/8	rad
+GW	3	39	0	drv40/8	drv40/8	0	drv40/8	-drv40/8	rad
+GW	4	39	0	-drv40/8	drv40/8	0	-drv40/8	-drv40/8	rad
+GW	5	39	-dref40	ref40/8	-ref40/8	-dref40	-ref40/8	-ref40/8	rad
+GW	6	39	-dref40	ref40/8	ref40/8	-dref40	-ref40/8	ref40/8	rad
+GW	7	39	-dref40	ref40/8	ref40/8	-dref40	ref40/8	-ref40/8	rad
+GW	8	39	-dref40	-ref40/8	ref40/8	-dref40	-ref40/8	-ref40/8	rad
+GW	9	39	ddir40	dir40/8	-dir40/8	ddir40	-dir40/8	-dir40/8	rad
+GW	10	39	ddir40	dir40/8	dir40/8	ddir40	-dir40/8	dir40/8	rad
+GW	11	39	ddir40	dir40/8	dir40/8	ddir40	dir40/8	-dir40/8	rad
+GW	12	39	ddir40	-dir40/8	dir40/8	ddir40	-dir40/8	-dir40/8	rad
+GW	13	19	0	drv20/8	-drv20/8	0	-drv20/8	-drv20/8	rad
+GW	14	19	0	drv20/8	drv20/8	0	-drv20/8	drv20/8	rad
+GW	15	19	0	drv20/8	drv20/8	0	drv20/8	-drv20/8	rad
+GW	16	19	0	-drv20/8	drv20/8	0	-drv20/8	-drv20/8	rad
+GW	17	19	-dref20	ref20/8	-ref20/8	-dref20	-ref20/8	-ref20/8	rad
+GW	18	19	-dref20	ref20/8	ref20/8	-dref20	-ref20/8	ref20/8	rad
+GW	19	19	-dref20	ref20/8	ref20/8	-dref20	ref20/8	-ref20/8	rad
+GW	20	19	-dref20	-ref20/8	ref20/8	-dref20	-ref20/8	-ref20/8	rad
+GW	21	19	ddir20	dir120/8	-dir120/8	ddir20	-dir120/8	-dir120/8	rad
+GW	22	19	ddir20	dir120/8	dir120/8	ddir20	-dir120/8	dir120/8	rad
+GW	23	19	ddir20	dir120/8	dir120/8	ddir20	dir120/8	-dir120/8	rad
+GW	24	19	ddir20	-dir120/8	dir120/8	ddir20	-dir120/8	-dir120/8	rad
+GW	25	19	ddir20*2	dir220/8	-dir220/8	ddir20*2	-dir220/8	-dir220/8	rad
+GW	26	19	ddir20*2	dir220/8	dir220/8	ddir20*2	-dir220/8	dir220/8	rad
+GW	27	19	ddir20*2	dir220/8	dir220/8	ddir20*2	dir220/8	-dir220/8	rad
+GW	28	19	ddir20*2	-dir220/8	dir220/8	ddir20*2	-dir220/8	-dir220/8	rad
+GM	0	0	0	0	0	0	0	height	1
+GE	-1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	2*rad
+GN	2	0	0	0	13	0.005
+EK
+EX	6	13	10	0	1	0	0
+EX	0	15	10	0	0	1	0
+FR	0	0	0	0	freq	0
+EN
