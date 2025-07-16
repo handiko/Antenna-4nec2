@@ -2,7 +2,7 @@ CM Cardioid, converted with 4nec2 on 31-Mar-24 22:47
 CE
 SY freq=7.05
 SY rad=0.8e-3
-SY height=33
+SY height=35
 SY sf40=0.9721
 SY ref40=43.78*sf40
 SY drv40=42.88*sf40

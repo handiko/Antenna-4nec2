@@ -1,0 +1,19 @@
+CM 
+CE
+SY freq=7.05
+SY L=11.18834
+SY H=20
+SY wrad=1e-3
+GW	1	9	0	-L/2	-L/2	0	-L/2	L/2	wrad
+GW	2	9	0	L/2	-L/2	0	L/2	L/2	wrad
+GW	3	9	0	-L/2	-L/2	0	L/2	-L/2	wrad
+GW	4	9	0	-L/2	L/2	0	L/2	L/2	wrad
+GM	0	0	0	0	0	0	0	H	1
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	13	0.005
+EK
+EX	0	3	5	0	1	0	0
+EX	0	1	5	0	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

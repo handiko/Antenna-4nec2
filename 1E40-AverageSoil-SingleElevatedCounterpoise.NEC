@@ -6,14 +6,15 @@ CM
 CM 
 CE
 SY freq=7.05
-SY H=11.2
-SY A=2
-SY R=9.029679
-SY RD=R/10
+SY H=9
+SY A=0.5
+SY L=9.051174
+SY R=2
 SY wrad = 0.6*1e-3
 SY irad=1.25*1e-3
 GW	1	20	0	0	A	0	0	A+H	wrad
-GW	2	10	0	0	A	R	0	A	wrad
+GW	2	4	0	0	A	R	0	A	wrad
+GW	3	20	0	0	A+H	L	0	A+H	wrad
 GE	1
 LD	5	0	0	0	58000000
 LD	7	0	0	0	4.5	irad
